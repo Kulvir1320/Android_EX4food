@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/food"
+       android:layout_marginTop="40dp"
+       android:layout_margin="16dp"
+       android:entries="@array/meals"></Spinner>
+
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:inputType="number"
+        android:id="@+id/price"
+        android:hint="Price"
+
+        android:padding="10dp"
+        android:layout_below="@+id/food"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quantity"
+        android:id="@+id/showQuantity"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="10dp"/>
+    <SeekBar
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/showQuantity"
+        android:min="1"
+        android:max="10"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg">
+        <RadioButton
+            android:text="10%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"/>
+        <RadioButton
+            android:text="15%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"/>
+        <RadioButton
+            android:text="20%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"/>
+    </RadioGroup>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="total price"
+        android:id="@+id/totalPrice"/>
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageFood"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/totalPrice"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm your order?"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageFood"
+        android:id="@+id/checkBox0"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">exercise4</string>
+    <string-array name="meals">
+        <item>Choose a Meal</item>
+        <item>Pizza</item>
+        <item>Fries</item>
+        <item>Burger</item>
+        <item>Pasta</item>
+        <item>choclate</item>
+        <item>chicken wings</item>
+        <item>sandwich</item>
+        <item>chips</item>
+        <item>rice</item>
+        <item>maggi</item>
+    </string-array>
+</resources>
